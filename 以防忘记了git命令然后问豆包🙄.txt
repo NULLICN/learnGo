@@ -1,0 +1,15 @@
+合并
+1. git rebase -i [提交id]
+2. 用s标记前一个待合并到后一个提交的提交点
+3. 输入本次合并的提交信息
+4. git push --force-with-lease origin（先检查有无最新提交再强制推送）
+
+改提交信息
+1. git rebase -i [提交id]
+2. 用r标记前一个待合并到后一个提交的提交点
+3. 输入本次修改的提交信息
+4. git push --force-with-lease origin（先检查有无最新提交再强制推送）
+
+拉取远端仓库的新代码
+1. git fetch origin main
+2. git pull --rebase origin main
