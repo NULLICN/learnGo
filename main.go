@@ -1,9 +1,9 @@
 package main
 
 import (
-	"GoBasic/calculation"
 	"encoding/json"
 	"fmt"
+	"learnGo/calculation"
 	"strconv"
 
 	"github.com/shopspring/decimal"
