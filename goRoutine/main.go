@@ -67,8 +67,9 @@ func ComputingAddUnit(position int) {
 func ComputingDesUnit(position int) {
 	wg.Add(1)
 	v -= 1
+	time.Sleep(time.Millisecond * 2000)
 	fmt.Printf("位次：%d 的减V:%d\n", position, v)
-	time.Sleep(time.Millisecond * 200)
+
 	wg.Done()
 }
 
